@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12">
+                <class class="title">Sign up</class>
+            </div>
+        </div>    
+
+        <div class="columns">
+            <div class="column is-12">
+                <form action="" method="post">
+                {% csrf_token %}
+
+                {{ form.as_p }}
+
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-success">Sign up</button>
+                    </div>
+                </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
